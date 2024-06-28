@@ -5,14 +5,15 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import WelcomePage from './pages/WelcomePage';
 import CreateAccountPage from './pages/CreateAccountPage';
+import SuccessPage from './pages/SuccessPage';
 
 type RootStackParamList = {
   Welcome: undefined;
   CreateAccount: undefined;
+  SuccessPage: undefined;
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
-
 
 function App() {
   return (
@@ -28,6 +29,11 @@ function App() {
           component={CreateAccountPage}
           options={{ title: 'Create Account' }}
         />
+        <Stack.Screen
+          name="SuccessPage"
+          component={SuccessPage}
+          options={{ title: 'Success Page' }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -38,8 +44,6 @@ let AppEntryPoint = App;
 if (Constants.expoConfig?.extra?.storybookEnabled === "true") {
   AppEntryPoint = require("./.ondevice").default;
 }
-
-
 
 const styles = StyleSheet.create({
   container: {

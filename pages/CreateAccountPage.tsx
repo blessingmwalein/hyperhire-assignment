@@ -15,8 +15,6 @@ const unhide = require('../assets/icons/unhide.png');
 const dropDownIcon = require('../assets/icons/drop_down_icon.png');
 const hide = require('../assets/icons/eye.png');
 const tick = require('../assets/icons/tick.png');
-const successLeftIcon = require('../assets/icons/success_left.png');
-const successRightIcon = require('../assets/icons/success_right.png');
 
 interface CreateAccountPageProps {
     navigation: any;
@@ -46,7 +44,6 @@ const validationSchema = Yup.object().shape({
     const [showPassword, setShowPassword] = useState(false);
     const [showCompetitionModal, setShowCompetitionModal] = useState(false);
     const [selectedCompetition, setSelectedCompetition] = useState('');
-    const [showSuccessModal, setShowSuccessModal] = useState(false);
     const [competitionsList, setCompetitions] = useState(competitions);
 
     const handleSelectCompetition = (competition: string) => {
@@ -57,7 +54,8 @@ const validationSchema = Yup.object().shape({
 
     const handleSubmit = (values: any) => {
         console.log('Signing up with:', values);
-        setShowSuccessModal(true); // Show success modal on form submission
+        // Show success modal on form submission
+        navigation.navigate('SuccessPage');
     };
 
     return (
@@ -225,14 +223,7 @@ const validationSchema = Yup.object().shape({
                             }}
                             navigation={navigation}
                         />
-                        <SuccessModal
-                            leftTopIcon={successLeftIcon}
-                            rightTopIcon={successRightIcon}
-                            isVisible={showSuccessModal}
-                            onClose={() => setShowSuccessModal(false)}
-                            title='Welcome to Soo'
-                            description='Great to have you with us!'
-                        />
+                       
                     </ScrollView>
                 </View>
             )}

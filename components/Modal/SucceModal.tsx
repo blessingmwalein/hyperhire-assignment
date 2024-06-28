@@ -38,7 +38,7 @@ const SuccessModal: React.FC<SuccessModalProps> = ({ isVisible, onClose, leftTop
                     <Text style={styles.modalTitle}>{title}</Text>
                     <Text style={styles.modalDescription}>{description}</Text>
                     <CustomButton
-                        onPress={() => { }}
+                        onPress={() => onClose()}
                         backgroundColor='#253BFF'
                         text="Got it!"
 
