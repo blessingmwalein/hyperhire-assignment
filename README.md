@@ -1,4 +1,4 @@
-Here's the corrected `README.md`:
+
 
 ```markdown
 # My React Native Project
