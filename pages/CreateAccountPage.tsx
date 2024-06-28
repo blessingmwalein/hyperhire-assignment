@@ -60,8 +60,6 @@ const validationSchema = Yup.object().shape({
         setShowSuccessModal(true); // Show success modal on form submission
     };
 
-
-
     return (
         <Formik
             initialValues={{

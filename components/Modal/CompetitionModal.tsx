@@ -14,7 +14,6 @@ interface CompetitionModalProps {
     setShowCompetitionModal: (show: boolean) => void;
     handleSelectCompetition: (name: string) => void;
     navigation: any;
-
 }
 
 export const CompetitionModal: React.FC<CompetitionModalProps> = ({ showCompetitionModal, competitionsList, setShowCompetitionModal, handleSelectCompetition, navigation }) => {
@@ -22,7 +21,6 @@ export const CompetitionModal: React.FC<CompetitionModalProps> = ({ showCompetit
 
     const updateSearch = (query: string) => {
         setSearchQuery(query);
-        // Additional logic for filtering competitions based on search query
     };
 
     return (
@@ -57,7 +55,6 @@ export const CompetitionModal: React.FC<CompetitionModalProps> = ({ showCompetit
                 {/* HEAD AND DESCRIPTION */}
                 <Text style={styles.headerStyle}>Competition</Text>
                 <Text style={styles.descriptionStyle}>An account is needed per one host. If you already have an account for the host of competition you want to sign up, you can login and  register.</Text>
-
 
                 <ScrollView>
                     {competitionsList.map((comp) => (
