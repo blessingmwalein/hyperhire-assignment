@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# hyperhire-assignment
-=======
 Here's the corrected `README.md`:
 
 ```markdown
@@ -73,4 +70,3 @@ If you have any questions or need further assistance, please contact [Blessing M
 ```
 
 This version corrects the Markdown syntax and formatting issues to ensure proper rendering and readability.
->>>>>>> master
