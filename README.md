@@ -1,57 +1,72 @@
-![image](https://user-images.githubusercontent.com/3481514/145904252-92e3dc1e-591f-410f-88a1-b4250f4ba6f2.png)
+Here's the corrected `README.md`:
 
-# getting started
+```markdown
+# My React Native Project
 
-```sh
-npx create-expo-app --template expo-template-storybook AwesomeStorybook
+## Getting Started
+
+This project is built using React Native and Expo. Follow the instructions below to get the project up and running on your Android device.
+
+### Prerequisites
+
+- Node.js (https://nodejs.org/)
+- Yarn (https://classic.yarnpkg.com/en/docs/install/)
+- Android Studio with an Android emulator setup or a physical Android device with USB debugging enabled
+- Expo CLI (https://docs.expo.dev/get-started/installation/)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/blessingmwalein/hyperhire-assignment.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd hyperhire-assignment
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   yarn install
+   ```
+
+4. To run the app on Android:
+
+   ```bash
+   yarn android
+   ```
+
+5. To run Storybook on Android:
+
+   ```bash
+   yarn storybook:android
+   ```
+
+## Development Notes
+
+- This project has been developed and tested only for Android. Functionality on iOS is not guaranteed.
+- Ensure that you have set up your environment correctly by following the official React Native documentation: https://reactnative.dev/docs/environment-setup
+
+## Project Structure
+
+- `App.tsx`: Entry point of the application.
+- `pages/`: Contains the main pages of the app (e.g., `WelcomePage`, `CreateAccountPage`, `SuccessPage`).
+- `components/`: Contains reusable components (e.g., `CustomButton`, `InputTextField`, `CompetitionModal`).
+- `.storybook/`: Configuration files for Storybook.
+
+## Additional Scripts
+
+- `yarn start`: Starts the Expo development server.
+- `yarn lint`: Runs ESLint to lint the code.
+- `yarn test`: Runs the test suite.
+
+### Contact
+
+If you have any questions or need further assistance, please contact [Blessing Mwale] at [blessingmwalein@gmail.com].
 ```
 
-or
-
-```sh
-yarn create expo-app --template expo-template-storybook AwesomeStorybook
-```
-
-# app
-
-```sh
-yarn start
-```
-
-# Ondevice
-
-In this template you can now run `yarn storybook` to start ondevice storybook or `yarn start` to start your expo app.
-This works via env variables and expo constants.
-
-```sh
-# either
-yarn storybook
-
-# ios
-yarn storybook:ios
-
-# android
-yarn storybook:android
-```
-
-If you add new stories on the native (ondevice version) you either need to have the watcher running or run the stories loader
-
-To update the stories one time
-
-```sh
-yarn storybook-generate
-```
-
-# Web
-
-Start react native web storybook:
-
-```
-yarn storybook:web
-```
-
-build react native web storybook:
-
-```sh
-yarn build-storybook
-```
+This version corrects the Markdown syntax and formatting issues to ensure proper rendering and readability.
